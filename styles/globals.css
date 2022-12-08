@@ -1,3 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Medium"; /*Can be any text*/
+  src: local("Poppins"),
+    url("../public/fonts/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SemiBold"; /*Can be any text*/
+  src: local("Poppins"),
+    url("../public/fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+
 html,
 body {
   padding: 0;
@@ -13,6 +28,7 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: "Medium", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +39,8 @@ a {
     color: white;
     background: black;
   }
+}
+
+.description p {
+  font-family: "SemiBold", sans-serif;
 }
