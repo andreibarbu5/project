@@ -8,25 +8,28 @@ const Footer = () => {
       <div className="px-5 max-w-[676px] md:max-w-[1000px] mx-auto md:flex items-center md:items-start justify-between text-white pt-6">
         <div className="w-full">
           <ul className="  md:space-y-4 pb-10">
-            <li>
+            <li className="cursor-pointer">
               <a href="#">Home</a>
             </li>
             <li className="cursor-pointer">
               <a>AGB</a>
             </li>
-            <li>
+            <li className="cursor-pointer">
               <a>Datenschutz</a>
             </li>
 
-            <li>
+            <li
+              onClick={() => router.push("/impressum")}
+              className="cursor-pointer"
+            >
               <a>Impressum</a>
             </li>
           </ul>
-          <p className="pb-8">
+          <p className="pb-8 ">
             © q-bility 2022. <br /> Alle Rechte vorbehalten.
           </p>
         </div>
-        <div className="w-full pb-6">
+        <div className="w-full pb-6 ">
           <p>
             Anschrift <br /> q-bility GmbH <br /> Brünnlfeldstraße 3 <br />
             85302 Gerolsbach
