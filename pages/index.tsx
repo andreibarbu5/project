@@ -1,6 +1,10 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
+import Trade from "../components/Trade";
+import Team from "../components/Team";
+import Mountains from "../components/Mountains";
+
 export default function Home() {
   return (
     <div className="">
@@ -11,11 +15,15 @@ export default function Home() {
       {/* About + Chart */}
       <About />
       {/* Trade your GHG*/}
+      <Trade />
       {/* Team */}
+      <Team />
+      {/* Mountains */}
+      <Mountains />
       {/* FAQ Dropdown Questions */}
       {/* Contact Us */}
       {/* Footer */}
-      <div className="h-screen bg-[#f9e5b3]"></div>
+      <div className="h-screen bg-[#ffffff]"></div>
     </div>
   );
 }

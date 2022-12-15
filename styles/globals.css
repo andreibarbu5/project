@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "Regular"; /*Can be any text*/
+  src: local("Poppins"),
+    url("../public/fonts/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
   font-family: "Medium"; /*Can be any text*/
   src: local("Poppins"),
     url("../public/fonts/Poppins-Medium.ttf") format("truetype");
@@ -43,4 +48,7 @@ a {
 
 .description p {
   font-family: "SemiBold", sans-serif;
+}
+.about p {
+  font-family: "Regular", sans-serif;
 }

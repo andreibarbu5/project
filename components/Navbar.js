@@ -6,7 +6,7 @@ import MenuDropDown from "../components/MenuDropDown";
 const Navbar = () => {
   const [isMenu, setIsMenu] = useState(false);
   return (
-    <div className="sticky top-0 bg-[#2d5d56]">
+    <div className="sticky z-30 top-0 bg-[#2d5d56]">
       <div className="bg-[#2d5d56] relative z-20 px-6 md:px-7 py-[1.85rem] flex items-center justify-between max-w-[676px] md:max-w-[1000px] mx-auto">
         {/* Left Side - Logo */}
         <div className="">
@@ -58,7 +58,11 @@ const Navbar = () => {
           isMenu && "translate-y-[0px]"
         } duration-300 ease-out lg:hidden rounded-full`}
       >
-        <div className="absolute bg-[#2d5d56] w-full  rounded-b-[0.8rem] shadow-lg shadow-black/30">
+        <div
+          className={`absolute bg-[#2d5d56] w-full  rounded-b-[0.8rem] ${
+            isMenu && "shadow-lg shadow-black/30"
+          }  `}
+        >
           <MenuDropDown />
         </div>
       </div>

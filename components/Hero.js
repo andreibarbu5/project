@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="w-full ">
       {/* Slide Under Navbar START */}
-      <div className="statich-8 w-full flex  ">
+      <div className="static h-8 w-full flex  ">
         <Image src={theslider} className="w-full h-[2rem] sm:h-[2.3rem]" />
       </div>
       {/* Slide Under Navbar END*/}
