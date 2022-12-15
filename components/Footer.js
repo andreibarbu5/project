@@ -1,22 +1,25 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <div className="bg-[#1c1f20]">
       <div className="px-5 max-w-[676px] md:max-w-[1000px] mx-auto md:flex items-center md:items-start justify-between text-white pt-6">
         <div className="w-full">
           <ul className="  md:space-y-4 pb-10">
             <li>
-              <a href="">Home</a>
+              <a href="#">Home</a>
+            </li>
+            <li className="cursor-pointer">
+              <a>AGB</a>
             </li>
             <li>
-              <a href="">AGB</a>
+              <a>Datenschutz</a>
             </li>
+
             <li>
-              <a href="">Datenschutz</a>
-            </li>
-            <li>
-              <a href="">Impressum</a>
+              <a>Impressum</a>
             </li>
           </ul>
           <p className="pb-8">
@@ -25,7 +28,7 @@ const Footer = () => {
         </div>
         <div className="w-full pb-6">
           <p>
-            Anschrift <br /> q-bility GmbH <br /> Brünnlfeldstraße 3 <br />{" "}
+            Anschrift <br /> q-bility GmbH <br /> Brünnlfeldstraße 3 <br />
             85302 Gerolsbach
           </p>
         </div>

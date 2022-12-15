@@ -7,6 +7,7 @@ import Mountains from "../components/Mountains";
 import Contact from "../components/Contact";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
+import Buttons from "../components/Buttons";
 
 export default function Home() {
   return (
@@ -29,6 +30,8 @@ export default function Home() {
       <Contact />
       {/* Footer */}
       <Footer />
+      {/* Absolute Buttons */}
+      <Buttons />
     </div>
   );
 }

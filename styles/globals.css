@@ -29,6 +29,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -42,6 +43,13 @@ a {
 }
 .thin {
   font-family: "Light", sans-serif;
+}
+
+#about,
+#trade,
+#team,
+#faq {
+  scroll-margin-top: 100px;
 }
 
 @media (prefers-color-scheme: dark) {

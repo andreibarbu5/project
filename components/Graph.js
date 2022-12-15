@@ -1,7 +1,7 @@
 import React from "react";
 import graph from "../assets/graph.jpg";
 import stats from "../assets/stats.jpeg";
-import slide from "../assets/slide.png";
+
 import Image from "next/image";
 const Graph = () => {
   return (

@@ -9,7 +9,10 @@ import LinkedIn from "../public/LinkedInSvg";
 
 const Team = () => {
   return (
-    <div className=" px-5 max-w-[676px] md:max-w-[1000px] mx-auto mt-20">
+    <div
+      id="team"
+      className=" px-5 max-w-[676px] md:max-w-[1000px] mx-auto mt-20"
+    >
       {/* Title */}
       <p className="text-[32px] font-semibold leading-[54px]">
         Wer steckt hinter q-bility?
@@ -36,17 +39,19 @@ const Team = () => {
               </p>
               {/* Socials */}
               <div className="flex items-center justify-center gap-12 md:gap-10 pt-4 ">
-                <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
-                  <a href="">
+                <a href="mailto:jan.roestel@q-bility.com">
+                  <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
                     <Mail />
-                  </a>
-                </div>
-
-                <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
-                  <a href="">
+                  </div>{" "}
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/jan-r%C3%B6stel-189209222/"
+                  target="_blank"
+                >
+                  <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
                     <LinkedIn />
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -70,17 +75,19 @@ const Team = () => {
               </p>
               {/* Socials */}
               <div className="flex items-center justify-center gap-12 md:gap-10 pt-4 ">
-                <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
-                  <a href="">
+                <a href="mailto:dennis.horn@q-bility.com">
+                  <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
                     <Mail />
-                  </a>
-                </div>
-
-                <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
-                  <a href="">
+                  </div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/dennis-horn-553852204/"
+                  target="_blank"
+                >
+                  <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
                     <LinkedIn />
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -104,14 +111,17 @@ const Team = () => {
               </p>
               {/* Socials */}
               <div className="flex items-center justify-center gap-12 md:gap-10 pt-4 ">
-                <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
-                  <a href="">
+                <a href="mailto:dominik.trisl@q-bility.com">
+                  <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
                     <Mail />
-                  </a>
-                </div>
+                  </div>
+                </a>
 
                 <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
-                  <a href="">
+                  <a
+                    href="https://www.linkedin.com/in/dominiktrisl/"
+                    target="_blank"
+                  >
                     <LinkedIn />
                   </a>
                 </div>
@@ -138,17 +148,19 @@ const Team = () => {
               </p>
               {/* Socials */}
               <div className="flex items-center justify-center gap-12 md:gap-10 pt-4 ">
-                <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
-                  <a href="">
+                <a href="mailto:dennis.geilus@q-bility.com">
+                  <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
                     <Mail />
-                  </a>
-                </div>
-
-                <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
-                  <a href="">
+                  </div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/dennis-g-a75458214/"
+                  target="_blank"
+                >
+                  <div className="bg-white p-2 rounded-full text-[22px] md:text-[26px]">
                     <LinkedIn />
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

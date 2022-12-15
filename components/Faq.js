@@ -47,7 +47,10 @@ const Faq = () => {
     );
   };
   return (
-    <div className="  px-5 max-w-[676px] md:max-w-[1000px] mx-auto pt-24 md:flex">
+    <div
+      id="faq"
+      className="  px-5 max-w-[676px] md:max-w-[1000px] mx-auto pt-24 md:flex"
+    >
       {/* Title */}
       <p className="text-[36px] leading-[54px] font-semibold pb-8 md:w-[30%] md:-mt-2 ">
         Wissen

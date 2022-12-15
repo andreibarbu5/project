@@ -1,10 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import background from "../assets/background.png";
+import { useRouter } from "next/router";
 
 const Trade = () => {
+  const router = useRouter();
   return (
-    <div className="mt-10 sm:mt-16   ">
+    <div id="trade" className="mt-10 sm:mt-16   ">
       {/* Title */}
       <p className="relative z-10 text-[36px] leading-[54px] text-center  font-bold  px-5 max-w-[676px] md:max-w-[1000px] mx-auto">
         Handeln Sie jetzt ihre THG-Quoten
@@ -55,14 +57,20 @@ const Trade = () => {
           </div>
         </div>
         {/* Buttons */}
-        <div className="relative z-10 mt-4 md:mt-8 space-y-4 px-5 max-w-[676px] md:max-w-[1000px] mx-auto ">
+        <div className="relative z-10 mt-4 md:mt-8 space-y-4 md:space-y-0 px-5 max-w-[676px] md:max-w-[1000px] mx-auto md:flex md:gap-4">
           {/* Button 1 */}
-          <div className="bg-[#f4cd69] py-2.5 rounded-full text-center  md:max-w-[25rem] mx-auto shadow-md shadow-gray-400">
-            <a href="#">Zum Marktplatz anmelden</a>
+          <div
+            className="bg-[#f4cd69] py-2.5 md:py-2 rounded-full text-center  md:w-[25rem] mx-auto shadow-md shadow-gray-400 cursor-pointer    "
+            onClick={() => router.push("/marktplatz")}
+          >
+            <a>Zum Marktplatz anmelden</a>
           </div>
           {/* Button 2 */}
-          <div className="bg-[#f4cd69] py-2.5 rounded-full text-center  md:max-w-[25rem] mx-auto shadow-md shadow-gray-400">
-            <a href="#">Testzugang anfordern</a>
+          <div
+            className="bg-[#f4cd69] py-2.5 md:py-2  rounded-full text-center  md:w-[25rem] mx-auto shadow-md shadow-gray-400 cursor-pointer"
+            onClick={() => router.push("/marktplatz")}
+          >
+            <a>Testzugang anfordern</a>
           </div>
         </div>
       </div>

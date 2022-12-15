@@ -1,13 +1,15 @@
 import React from "react";
 import DiagramLogo from "../public/DiagramLogo";
-import theslider from "../assets/slide.png";
+import img from "../assets/img.png";
 import Image from "next/image";
+import { useRouter } from "next/router";
 const Hero = () => {
+  const router = useRouter();
   return (
     <div className="w-full ">
       {/* Slide Under Navbar START */}
       <div className="static h-8 w-full flex  ">
-        <Image src={theslider} className="w-full h-[2rem] sm:h-[2.3rem]" />
+        <Image src={img} className="w-full h-[3.1rem] sm:h-[2.3rem]" />
       </div>
       {/* Slide Under Navbar END*/}
 
@@ -36,7 +38,10 @@ const Hero = () => {
             </div>
 
             <div className="bg-[#f4cd69] px-2 py-1.5 flex justify-center items-center rounded-full  mt-9 w-[277.14px] text-[14px]  shadow-md shadow-gray-500 font-bold ">
-              <button className="tracking-[.03em]">
+              <button
+                className="tracking-[.03em]"
+                onClick={() => router.push("/marktplatz")}
+              >
                 Zum Marktplatz anmelden
               </button>
             </div>

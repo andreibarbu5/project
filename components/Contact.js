@@ -3,7 +3,7 @@ import PlaneSvg from "../public/PlaneSvg";
 
 const Contact = () => {
   return (
-    <div className="bg-[#b4bec1]">
+    <div className="bg-[#b4bec1] " id="contact">
       <div className="  px-5 max-w-[676px] md:max-w-[1000px] mx-auto bg-[#b4bec1] mt-12 text-[#1c1f20] py-16">
         <p className="text-[36px] leading-[54px] font-semibold">
           Kontaktieren Sie uns bei Fragen

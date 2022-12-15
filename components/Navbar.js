@@ -3,14 +3,16 @@ import Logo from "../public/Logo";
 import MenuIcon from "../public/MenuIcon";
 import CloseMenuIcon from "../public/CloseMenuIcon";
 import MenuDropDown from "../components/MenuDropDown";
+import { useRouter } from "next/router";
 const Navbar = () => {
+  const router = useRouter();
   const [isMenu, setIsMenu] = useState(false);
   return (
     <div className="sticky z-30 top-0 bg-[#2d5d56]">
       <div className="bg-[#2d5d56] relative z-20 px-6 md:px-7 py-[1.85rem] flex items-center justify-between max-w-[676px] md:max-w-[1000px] mx-auto">
         {/* Left Side - Logo */}
         <div className="">
-          <Logo />
+          <Logo onClick={() => router.push("/")} className="cursor-pointer" />
         </div>
 
         {/* Right Side*/}
@@ -31,22 +33,27 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <ul className="font-semibold flex items-center gap-x-10 text-white text-[14px] leading-[20px] ">
             <li className="hover:text-[#f6d787] duration-200 ease-out">
-              <a href="#">Warum q-bility?</a>
+              <a href="#about">Warum q-bility?</a>
             </li>
             <li className="hover:text-[#f6d787] duration-200 ease-out">
-              <a>Jetzt Quoten handeln</a>
+              <a href="#trade">Jetzt Quoten handeln</a>
             </li>
             <li className="hover:text-[#f6d787] duration-200 ease-out">
-              <a>Team</a>
+              <a href="#team">Team</a>
             </li>
             <li className="hover:text-[#f6d787] duration-200 ease-out">
-              <a>Wissen</a>
+              <a href="#faq">Wissen</a>
             </li>
             <li className="hover:text-[#f6d787] duration-200 ease-out">
-              <a>Kontakt</a>
+              <a href="#contact">Kontakt</a>
             </li>
             <li className="hover:text-[#f6d787] duration-200 ease-out">
-              <a>Login</a>
+              <a
+                onClick={() => router.push("/login")}
+                className="cursor-pointer"
+              >
+                Login
+              </a>
             </li>
           </ul>
         </div>
